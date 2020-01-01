@@ -1,0 +1,104 @@
+.mat-tab-group {
+    display: flex;
+    flex-direction: row !important;
+}
+
+.mat-tab-labels {
+    display: flex;
+    flex-direction: column;
+}
+
+.mat-tab-label {
+    height: 48px;
+    padding: 0 24px;
+    cursor: pointer;
+    box-sizing: border-box;
+    opacity: .6;
+    min-width: 280px !important;
+    text-align: left !important;
+    display: inline-flex;
+    justify-content: left !important;
+    align-items: center;
+    background-color: #eee !important;
+    white-space: nowrap;
+    position: relative;
+    border : 1px solid #ccc;
+}
+
+.mat-tab-label:first
+{
+    justify-content: center !important;
+}
+
+.mat-tab-body-wrapper {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    width : 100% !important;
+    padding: 10px !important;
+    border: 1px solid #ddd !important;
+    transition: height .5s cubic-bezier(.35,0,.25,1);
+}
+
+.mat-radio-button ~ .mat-radio-button {
+    margin-left: 30px;
+  }
+
+
+  .example-card {
+    max-width: 200px;
+    text-align:center;
+    margin : 5px;
+  }
+  
+  .example-header-image {
+    background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+    background-size: cover;
+  }
+
+  .mat-card-actions {
+    margin-left: -8px;
+    margin-right: -8px;
+    padding: 0px 0 !important;
+}
+
+.buttonspostadd button,
+.buttonspostadd a {
+  margin-right: 8px;
+  text-decoration: none;
+}
+
+.mat-toolbar-row, .mat-toolbar-single-row {
+  height: 45px !important;
+  background-color: #10537e;
+  color : white;
+}
+
+.material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    padding-right: 10px;
+}
+
+.mat-tab-label-active
+{
+  background-color: #10537e !important;
+  color : #ffffff !important;
+}
+
+.mat-radio-button.mat-accent .mat-radio-inner-circle, .mat-radio-button.mat-accent .mat-radio-ripple .mat-ripple-element:not(.mat-radio-persistent-ripple), .mat-radio-button.mat-accent.mat-radio-checked .mat-radio-persistent-ripple, .mat-radio-button.mat-accent:active .mat-radio-persistent-ripple {
+  background-color:  #10537e !important;
+}
+
+.mat-radio-button.mat-accent.mat-radio-checked .mat-radio-outer-circle {
+  border-color: #10537e !important;
+}

@@ -1,0 +1,29 @@
+.aside-main
+{
+    width:100%;
+    height: auto;
+    margin-top: 5%;
+    background-color: #ddd;
+}
+.aside-main .aside-user-details .aside-user-image
+{
+    width: 47px;
+    height: 47px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.aside-main .aside-user-details .aside-user-image img
+{
+    width:100%;
+    height: 100%;
+}
+.aside-main .aside-user-details span{
+    padding: 4% 5%;
+    width: 65%;
+    
+}
+.aside-main .aside-user-details a{
+    text-align: right;
+    padding: 4% 5%;
+    float: right;
+}

@@ -1,0 +1,92 @@
+.breadcrumb-section
+{
+   
+}
+.breadcrumb-section ol li a
+{
+    text-decoration: none;
+    
+}
+.breadcrumb
+{
+    margin: 0;
+    background-color: #fff;
+}
+.breadcrumb-section h2
+{
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+.contact-icons
+{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    margin: 16px 0;
+}
+.contact-icons .contact-icon-box{
+    width: 100%;
+    height: 150px;
+    border: 2px solid #10537e;
+    position: relative;
+}
+.contact-icons .contact-icon-box .contact-icon{
+    width: 100%;
+    height: 150px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    text-align: center;
+    padding: 13% 0;
+    z-index: 9999;
+    transition: 2s all ease;
+}
+.contact-icons .contact-icon-box .contact-icon i{
+    font-size: 70px;
+    color:  #10537e;;
+}
+
+.contact-icons .contact-icon-box .contact-icon p
+{
+    margin-top: 20%;
+}
+.contact-icons .contact-icon-box .contact-icon-hover
+{
+    width: 100%;
+    height: 150px;
+    background-color: rgba(0, 0,0 ,0.6);
+    position: absolute;
+    top: 100%;
+    left: 0;
+   
+    
+}
+.contact-icons .contact-icon-box .contact-icon:hover
+{
+    background-color: #10537e;;
+    width: 100%;
+    height:150px;
+    color: #fff;
+    
+}
+.contact-icons .contact-icon-box .contact-icon:hover p
+{
+    margin-top: 5%;
+    color: #fff
+}
+.contact-icons .contact-icon-box .contact-icon:hover i
+{
+   font-size: 40px;
+    color: #fff
+}
+.form-section
+{
+    margin-top: 80px;
+    
+}
+.location-section{
+    margin-top: 20px;
+}
+.form-group {
+    margin-bottom: 2rem;
+}

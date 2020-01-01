@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900');
+body
+{
+    font-family: 'poppins',sans-serif;
+    font-size: 14px;
+    background: #eee;
+    color: #666;
+}
+.login-container
+{
+    height: 100vh;
+    width: 100%;
+    
+}
+.login-form
+{
+    max-width: 100%;
+    width: 370px;
+    padding: 15px;
+    margin: auto;
+    box-shadow: 0 0 10px rgba(0,0,0,0.6);
+    border-radius: 5px;
+    position: relative;
+}
+.login-logo
+{
+    position: absolute;
+    top:0;
+    left: 50%;
+    width: 80px;
+    height: 80px;
+    margin: 0 auto;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 0 18px #0c5460;
+}
+.login-logo img
+{
+    width: 100%;
+    height: 100%;
+    
+}
+.form-control
+{
+    font-size: 15px;
+    min-height: 48px;
+    font-weight: 500;
+}
+.form-contol:focus
+{
+    border-color:#10537e;
+    box-shadow: 0 0 0 0.2rem rgba(114,61,190,.25);
+}
+.forgot-link
+{
+    font-size: 13px;
+}
+.login-form h1
+{
+    font-size: 20px;
+    font-family: sans-serif;
+    margin-top: 50px;
+}
+.login-form a{
+    text-decoration: none;
+    color: #666;
+}
+.login-form a:hover
+{
+    color:#10537e;
+}
+.btn-custom
+{
+    background: #10537e;
+    border-color: #10537e;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 600;
+    min-height: 48px;
+    padding: 5px 60px;
+}
+.btn-custom:focus,
+.btn-custom:hover,
+.btn-custom:active,
+.btn-custom:active:focus
+{
+    background: #10537e;
+    border-color: #10537e;
+    color: #fff;
+}
+.btn-custom:focus
+{
+    box-shadow: 0 0 0 0.2rem rgba(114,61,190,.25);
+}

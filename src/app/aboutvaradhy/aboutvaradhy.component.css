@@ -1,0 +1,100 @@
+body{
+    background: #282828;
+    font-family:tahoma;
+    text-align: justify;
+}
+#about
+{
+    padding-top: 98px;
+    padding-bottom: 101px;
+    background: #fff;
+}
+#about .triangle-right
+{
+    margin-top: 95px;
+    width: 0;
+    height:0;
+    border-top: 259px solid transparent;
+    border-left: 470px solid #d6c6b2;
+    border-bottom: 259px solid transparent;
+}
+#about .triangle-right img
+{
+    position: absolute;
+    left: -1px;
+    top: 81px;
+    width: 74%;
+}
+.fa-play
+{
+    font-size: 100px;
+}
+#about .about-right p
+{
+    margin-bottom: 0px;
+    color: #000000;
+}
+#about h2{
+    margin-bottom: 47px;
+    margin-top: 12px;
+}
+#about .social-link-text
+{
+    margin-bottom: 25px;
+    margin-top: 50px;
+}
+#about .about-link
+{
+    padding-left: 0px;
+}
+#about .about-link li
+{
+  display: inline-block;
+}
+#about .about-link li a i
+{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  line-height: 50px;
+  text-align: center;
+  border: 1px solid #10537e;
+  margin-right: 10px;
+  font-size: 22px;
+  color: #10537e;
+  transition: all .3s;;
+}
+#about .about-link li a i:hover
+{
+    color: #fff;
+    background: #10537e;
+    border-color:  #10537e;
+}
+#about .about-img
+{
+    position: relative;
+}
+#about .about-img .man
+{
+    position: absolute;
+    bottom: 161px;
+    top: 12px;
+    left: -2px;
+}
+
+.text-white
+{
+    color: #fff;
+}
+p
+{
+    margin-bottom: 0;
+    font-size: 16px;
+    line-height: 24px;
+    color: #d6c6b2;
+}
+.btn-danger{
+    border-radius: 0;
+    padding: 10px 20px;
+}
+

@@ -1,0 +1,783 @@
+
+<div class="container">
+    <div class="post-main">
+        <div class="col-md-12">
+            <div>
+                <mat-toolbar>
+                    <span class="fill-remaining-space"></span>
+                    <span>Post Free Add - Category Wise</span>
+                    <span class="fill-remaining-space"></span>
+                </mat-toolbar>
+            </div>
+            <mat-tab-group>
+                <mat-tab disabled> 
+                    <ng-template mat-tab-label>
+                        <div>
+                            Select Category
+                        </div>
+                      </ng-template>
+
+                      <mat-grid-list cols="1" rowHeight="500px">
+                        <mat-grid-tile>
+                            <h1>POST ADD</h1>
+                        </mat-grid-tile>
+                      </mat-grid-list>
+                      
+                    </mat-tab>
+                <mat-tab> 
+                    <ng-template mat-tab-label><i class="material-icons">warning</i>Alert</ng-template>
+                    <div class="form-area">
+                        <div>
+                            <mat-toolbar>
+                                <span class="fill-remaining-space"></span>
+                                <span>Post Free Add - Alert</span>
+                                <span class="fill-remaining-space"></span>
+                            </mat-toolbar>
+                        </div>
+                        <form>
+                            <mat-grid-list cols="2" rowHeight="220px">
+                                <mat-grid-tile>
+                                    <button mat-stroked-button color="warn" (click)="onClick()"><mat-icon>file_upload</mat-icon>{{text}}</button>
+                                    <br/>
+                                    <input type="file" id="fileUpload" name="fileUpload" multiple="multiple" accept="{{accept}}" style="display:none;"/>
+                                </mat-grid-tile>
+                                <mat-grid-tile>
+
+                                    <mat-card class="example-card">
+                                        <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
+                                        <mat-card-actions>
+                                            <button mat-button color="warn">Delete</button>
+                                        </mat-card-actions>
+                                    </mat-card>
+
+                                    <mat-card class="example-card">
+                                        <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
+                                        <mat-card-actions>
+                                            <button mat-button color="warn">Delete</button>
+                                        </mat-card-actions>
+                                    </mat-card>
+                                          
+                                </mat-grid-tile>
+                            </mat-grid-list>
+                                
+                            <mat-grid-list cols="1" rowHeight="40px">
+                                <mat-grid-tile>
+                                    <div class="controles-container">
+                                        <div class="add-padding-bottom">
+                                            <mat-radio-group aria-label="Select an option">
+                                                <mat-radio-button value="1">alert</mat-radio-button>
+                                                <mat-radio-button value="2">information</mat-radio-button>
+                                            </mat-radio-group>
+                                        </div>
+                                    </div>
+                                </mat-grid-tile>
+                            </mat-grid-list>
+                            <mat-grid-list cols="1" rowHeight="220px">
+                                <mat-grid-tile>
+                                    <div class="controles-container">
+                                         <mat-form-field class="example-full-width">
+                                            <textarea matInput placeholder="Description"></textarea>
+                                        </mat-form-field>                  
+                                    </div>
+                                </mat-grid-tile>
+                            </mat-grid-list>
+
+                            <div class="pull-right buttonspostadd nopadding">
+                                <button mat-raised-button color="primary"><i class="material-icons">save</i>Save</button>
+                                <button mat-raised-button color="primary"><i class="material-icons">save</i>Post</button>
+                                <button mat-raised-button color="warn"><i class="material-icons">settings_backup_restore</i>Reset</button>
+                                <a mat-raised-button routerLink="/home"><i class="material-icons">undo</i>Back To Home</a>
+                            </div>
+                        </form>                      
+                    </div>
+                </mat-tab>
+                <mat-tab> 
+                    <ng-template mat-tab-label><i class="material-icons">stay_current_portrait</i>Mobile</ng-template>
+                    <div class="form-area">
+                        <div>
+                            <mat-toolbar>
+                                <span class="fill-remaining-space"></span>
+                                <span>Post Free Add - Mobile</span>
+                                <span class="fill-remaining-space"></span>
+                            </mat-toolbar>
+                        </div>
+                        <form>
+                            <mat-grid-list cols="2" rowHeight="220px">
+                                <mat-grid-tile>
+                                    <button mat-stroked-button color="warn" (click)="onClick()"><mat-icon>file_upload</mat-icon>{{text}}</button>
+                                    <br/>
+                                    <input type="file" id="fileUpload" name="fileUpload" multiple="multiple" accept="{{accept}}" style="display:none;"/>
+                                </mat-grid-tile>
+                                <mat-grid-tile>
+
+                                    <mat-card class="example-card">
+                                        <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
+                                        <mat-card-actions>
+                                            <button mat-button color="warn">Delete</button>
+                                        </mat-card-actions>
+                                    </mat-card>
+
+                                    <mat-card class="example-card">
+                                        <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
+                                        <mat-card-actions>
+                                            <button mat-button color="warn">Delete</button>
+                                        </mat-card-actions>
+                                    </mat-card>
+                                          
+                                </mat-grid-tile>
+                            </mat-grid-list>
+                                
+                            <mat-grid-list cols="1" rowHeight="30px">
+                                <mat-grid-tile>
+                                    <div class="controles-container">
+                                        <div class="add-padding-bottom">
+                                            <mat-radio-group aria-label="Select an option">
+                                                <mat-radio-button value="1">Lost</mat-radio-button>
+                                                <mat-radio-button value="2">Found</mat-radio-button>
+                                            </mat-radio-group>
+                                        </div>
+                                    </div>
+                                </mat-grid-tile>
+                            </mat-grid-list>
+
+                            <mat-grid-list cols="2" rowHeight="220px">
+                                <mat-grid-tile>
+                                    <div class="controles-container">
+                                        <mat-form-field class="example-full-width">
+                                            <input matInput placeholder="Brand Name *">
+                                        </mat-form-field>
+                                     
+                                        <mat-form-field class="example-full-width">
+                                            <textarea matInput placeholder="Description"></textarea>
+                                        </mat-form-field>  
+                                        <mat-form-field class="example-full-width" *ngIf="selectedValue == 'Others'">
+                                            <input matInput placeholder="Certificate Type *">
+                                        </mat-form-field>
+                                                  
+                                    </div>
+                                </mat-grid-tile>
+
+                                <mat-grid-tile>
+                                    <div class="controles-container">
+                                        <mat-form-field class="example-full-width">
+                                            <input matInput placeholder="Model Name *">
+                                        </mat-form-field>
+                                        <mat-form-field class="example-full-width">
+                                            <input matInput placeholder="IMEL Number *">
+                                        </mat-form-field> 
+                                    </div>
+                                </mat-grid-tile>
+                            </mat-grid-list>
+
+                            <div class="pull-right buttonspostadd nopadding">
+                                <button mat-raised-button color="primary"><i class="material-icons">save</i>Save</button>
+                                <button mat-raised-button color="warn"><i class="material-icons">settings_backup_restore</i>Reset</button>
+                                <a mat-raised-button routerLink="/home"><i class="material-icons">undo</i>Back To Home</a>
+                            </div>
+                        </form>                      
+                    </div>
+                </mat-tab>
+                <mat-tab> 
+                    <ng-template mat-tab-label><i class="material-icons">picture_in_picture</i>HallTicket</ng-template>
+                    <div class="form-area">
+                        <div>
+                            <mat-toolbar>
+                                <span class="fill-remaining-space"></span>
+                                <span>Post Free Add - HallTicket</span>
+                                <span class="fill-remaining-space"></span>
+                            </mat-toolbar>
+                        </div>
+                        <form>
+                            <mat-grid-list cols="2" rowHeight="220px">
+                                <mat-grid-tile>
+                                    <button mat-stroked-button color="warn" (click)="onClick()"><mat-icon>file_upload</mat-icon>{{text}}</button>
+                                    <br/>
+                                    <input type="file" id="fileUpload" name="fileUpload" multiple="multiple" accept="{{accept}}" style="display:none;"/>
+                                </mat-grid-tile>
+                                <mat-grid-tile>
+
+                                    <mat-card class="example-card">
+                                        <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
+                                        <mat-card-actions>
+                                            <button mat-button color="warn">Delete</button>
+                                        </mat-card-actions>
+                                    </mat-card>
+
+                                    <mat-card class="example-card">
+                                        <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
+                                        <mat-card-actions>
+                                            <button mat-button color="warn">Delete</button>
+                                        </mat-card-actions>
+                                    </mat-card>
+                                          
+                                </mat-grid-tile>
+                            </mat-grid-list>
+                                
+                            <mat-grid-list cols="1" rowHeight="30px">
+                                <mat-grid-tile>
+                                    <div class="controles-container">
+                                        <div class="add-padding-bottom">
+                                            <mat-radio-group aria-label="Select an option">
+                                                <mat-radio-button value="1">alert</mat-radio-button>
+                                                <mat-radio-button value="2">information</mat-radio-button>
+                                            </mat-radio-group>
+                                        </div>
+                                    </div>
+                                </mat-grid-tile>
+                            </mat-grid-list>
+                            <mat-grid-list cols="2" rowHeight="220px">
+                                <mat-grid-tile>
+                                    <div class="controles-container">
+                                         <mat-form-field class="example-full-width">
+                                            <textarea matInput placeholder="Description"></textarea>
+                                        </mat-form-field>                  
+                                    </div>
+                                </mat-grid-tile>
+                            </mat-grid-list>
+
+                            <div class="pull-right buttonspostadd nopadding">
+                                <button mat-raised-button color="primary"><i class="material-icons">save</i>Save</button>
+                                <button mat-raised-button color="warn"><i class="material-icons">settings_backup_restore</i>Reset</button>
+                                <a mat-raised-button routerLink="/home"><i class="material-icons">undo</i>Back To Home</a>
+                            </div>
+                        </form>                      
+                    </div>
+                </mat-tab>
+                <mat-tab> 
+                    <ng-template mat-tab-label><i class="material-icons">laptop</i>Laptop</ng-template>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste pariatur id deserunt autem vel commodi eius, minima, molestiae tempore molestias neque odit doloribus qui, labore ut itaque reprehenderit. Exercitationem, assumenda.
+                </mat-tab>
+                <mat-tab> 
+                    <ng-template mat-tab-label><i class="material-icons">file_copy</i>Certificate</ng-template>
+                    <div class="form-area">
+                        <div>
+                            <mat-toolbar>
+                                <span class="fill-remaining-space"></span>
+                                <span>Post Free Add - Certificate</span>
+                                <span class="fill-remaining-space"></span>
+                            </mat-toolbar>
+                        </div>
+                        <form>
+                            <mat-grid-list cols="2" rowHeight="220px">
+                                <mat-grid-tile>
+                                    <button mat-stroked-button color="warn" (click)="onClick()"><mat-icon>file_upload</mat-icon>{{text}}</button>
+                                    <br/>
+                                    <input type="file" id="fileUpload" name="fileUpload" multiple="multiple" accept="{{accept}}" style="display:none;"/>
+                                </mat-grid-tile>
+                                <mat-grid-tile>
+
+                                    <mat-card class="example-card">
+                                        <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
+                                        <mat-card-actions>
+                                            <button mat-button color="warn">Delete</button>
+                                        </mat-card-actions>
+                                    </mat-card>
+
+                                    <mat-card class="example-card">
+                                        <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
+                                        <mat-card-actions>
+                                            <button mat-button color="warn">Delete</button>
+                                        </mat-card-actions>
+                                    </mat-card>
+                                          
+                                </mat-grid-tile>
+                            </mat-grid-list>
+                                
+                            <mat-grid-list cols="1" rowHeight="30px">
+                                <mat-grid-tile>
+                                    <div class="controles-container">
+                                        <div class="add-padding-bottom">
+                                            <mat-radio-group aria-label="Select an option">
+                                                <mat-radio-button value="1">Lost</mat-radio-button>
+                                                <mat-radio-button value="2">Found</mat-radio-button>
+                                            </mat-radio-group>
+                                        </div>
+                                    </div>
+                                </mat-grid-tile>
+                            </mat-grid-list>
+
+                            <mat-grid-list cols="2" rowHeight="220px">
+                                <mat-grid-tile>
+                                    <div class="controles-container">
+                                        <mat-form-field>
+                                            <mat-label>Certificate Type</mat-label>
+                                            <mat-select  [(ngModel)]="selectedValue" [ngModelOptions]="{standalone:
+                                                true}">
+                                                <mat-option value="">10th Certificate</mat-option>
+                                                <mat-option value="">Intermediate</mat-option>
+                                                <mat-option value="">PolyTechnic</mat-option>
+                                                <mat-option value="">Degree</mat-option>
+                                                <mat-option value="">Graduation</mat-option>
+                                                <mat-option value="">Post Graduation</mat-option>
+                                                <mat-option value="">PHD</mat-option>
+                                                <mat-option value="">Birth Certificate</mat-option>
+                                                <mat-option value="">Death Certificate</mat-option>
+                                                <mat-option value="">Offer Letter</mat-option>
+                                                <mat-option value="Others">Others</mat-option>
+                                            </mat-select>
+                                        </mat-form-field>  
+                                        <mat-form-field class="example-full-width">
+                                            <input matInput placeholder="Name On the Certificate *">
+                                        </mat-form-field>
+                                        <mat-form-field class="example-full-width">
+                                            <textarea matInput placeholder="Description"></textarea>
+                                        </mat-form-field>                  
+                                    </div>
+                                </mat-grid-tile>
+
+                                <mat-grid-tile>
+                                    <div class="controles-container">
+                                        <mat-form-field class="example-full-width" *ngIf="selectedValue == 'Others'">
+                                            <input matInput placeholder="Certificate Type *">
+                                        </mat-form-field>
+                                        <mat-form-field class="example-full-width">
+                                            <input matInput placeholder="School Name / Collage Name *">
+                                        </mat-form-field>
+                                        <mat-form-field class="example-full-width">
+                                            <input matInput placeholder="Pass Out Year *">
+                                        </mat-form-field>    
+                                    </div>
+                                </mat-grid-tile>
+                            </mat-grid-list>
+
+                            <div class="pull-right buttonspostadd nopadding">
+                                <button mat-raised-button color="primary"><i class="material-icons">save</i>Save</button>
+                                <button mat-raised-button color="warn"><i class="material-icons">settings_backup_restore</i>Reset</button>
+                                <a mat-raised-button routerLink="/home"><i class="material-icons">undo</i>Back To Home</a>
+                            </div>
+                        </form>                      
+                    </div>
+                </mat-tab>
+
+                <mat-tab> 
+                    <ng-template mat-tab-label><i class="material-icons">account_box</i>ID Card</ng-template>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste pariatur id deserunt autem vel commodi eius, minima, molestiae tempore molestias neque odit doloribus qui, labore ut itaque reprehenderit. Exercitationem, assumenda.
+                </mat-tab>
+
+                <mat-tab> 
+                    <ng-template mat-tab-label><i class="material-icons">folder_shared</i>Document</ng-template>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste pariatur id deserunt autem vel commodi eius, minima, molestiae tempore molestias neque odit doloribus qui, labore ut itaque reprehenderit. Exercitationem, assumenda.
+                </mat-tab>
+
+                <mat-tab> 
+                    <ng-template mat-tab-label><i class="material-icons">account_balance_wallet</i>Wallet</ng-template>
+                    <div class="form-area">
+                        <div>
+                            <mat-toolbar>
+                                <span class="fill-remaining-space"></span>
+                                <span>Post Free Add - Wallet</span>
+                                <span class="fill-remaining-space"></span>
+                            </mat-toolbar>
+                        </div>
+                        <form>
+                            <mat-grid-list cols="2" rowHeight="220px">
+                                <mat-grid-tile>
+                                    <button mat-stroked-button color="warn" (click)="onClick()"><mat-icon>file_upload</mat-icon>{{text}}</button>
+                                    <br/>
+                                    <input type="file" id="fileUpload" name="fileUpload" multiple="multiple" accept="{{accept}}" style="display:none;"/>
+                                </mat-grid-tile>
+                                <mat-grid-tile>
+
+                                    <mat-card class="example-card">
+                                        <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
+                                        <mat-card-actions>
+                                            <button mat-button color="warn">Delete</button>
+                                        </mat-card-actions>
+                                    </mat-card>
+
+                                    <mat-card class="example-card">
+                                        <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
+                                        <mat-card-actions>
+                                            <button mat-button color="warn">Delete</button>
+                                        </mat-card-actions>
+                                    </mat-card>
+                                          
+                                </mat-grid-tile>
+                                
+                            </mat-grid-list>
+                                
+                            <mat-grid-list cols="1" rowHeight="30px">
+                                <mat-grid-tile>
+                                    <div class="controles-container">
+                                        <div class="add-padding-bottom">
+                                            <mat-radio-group aria-label="Select an option">
+                                                <mat-radio-button value="1">Lost</mat-radio-button>
+                                                <mat-radio-button value="2">Found</mat-radio-button>
+                                            </mat-radio-group>
+                                        </div>
+                                    </div>
+                                </mat-grid-tile>
+                            </mat-grid-list>
+
+                            <mat-grid-list cols="2" rowHeight="220px">
+                                <mat-grid-tile>
+                                    <div class="controles-container">
+                                   
+                                        <mat-form-field class="example-full-width">
+                                            <input matInput placeholder="Wallet Brand*">
+                                        </mat-form-field>
+                                       
+                                        <mat-form-field class="example-full-width">
+                                            <textarea matInput placeholder="Description"></textarea>
+                                        </mat-form-field>                  
+                                    </div>
+                                </mat-grid-tile>
+                                <mat-grid-tile>
+                                    <div class="controles-container">
+                                        <mat-form-field class="example-full-width">
+                                            <input matInput placeholder="Wallet Color*">
+                                        </mat-form-field>
+                                    </div>
+                                </mat-grid-tile>
+                            
+                            </mat-grid-list>
+
+                            <div class="pull-right buttonspostadd nopadding">
+                                <button mat-raised-button color="primary"><i class="material-icons">save</i>Save</button>
+                                <button mat-raised-button color="warn"><i class="material-icons">settings_backup_restore</i>Reset</button>
+                                <a mat-raised-button routerLink="/home"><i class="material-icons">undo</i>Back To Home</a>
+                            </div>
+                        </form>                      
+                    </div>
+                </mat-tab>
+
+                <mat-tab> 
+                    <ng-template mat-tab-label><i class="material-icons">assignment_late</i>Bag</ng-template>
+                    <div class="form-area">
+                        <div>
+                            <mat-toolbar>
+                                <span class="fill-remaining-space"></span>
+                                <span>Post Free Add - Bag</span>
+                                <span class="fill-remaining-space"></span>
+                            </mat-toolbar>
+                        </div>
+                        <form>
+                            <mat-grid-list cols="2" rowHeight="220px">
+                                <mat-grid-tile>
+                                    <button mat-stroked-button color="warn" (click)="onClick()"><mat-icon>file_upload</mat-icon>{{text}}</button>
+                                    <br/>
+                                    <input type="file" id="fileUpload" name="fileUpload" multiple="multiple" accept="{{accept}}" style="display:none;"/>
+                                </mat-grid-tile>
+                                <mat-grid-tile>
+
+                                    <mat-card class="example-card">
+                                        <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
+                                        <mat-card-actions>
+                                            <button mat-button color="warn">Delete</button>
+                                        </mat-card-actions>
+                                    </mat-card>
+
+                                    <mat-card class="example-card">
+                                        <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
+                                        <mat-card-actions>
+                                            <button mat-button color="warn">Delete</button>
+                                        </mat-card-actions>
+                                    </mat-card>
+                                          
+                                </mat-grid-tile>
+                            </mat-grid-list>
+                                
+                            <mat-grid-list cols="1" rowHeight="30px">
+                                <mat-grid-tile>
+                                    <div class="controles-container">
+                                        <div class="add-padding-bottom">
+                                            <mat-radio-group aria-label="Select an option">
+                                                <mat-radio-button value="1">Lost</mat-radio-button>
+                                                <mat-radio-button value="2">Found</mat-radio-button>
+                                               
+                                            </mat-radio-group>
+                                            
+                                        </div>
+                                    </div>
+                                </mat-grid-tile>
+                            </mat-grid-list>
+
+                            <mat-grid-list cols="2" rowHeight="220px">
+                                <mat-grid-tile>
+                                    <div class="controles-container">
+                                        <mat-form-field>
+                                            <mat-label>Select Bag Type</mat-label>
+                                            <mat-select  [(ngModel)]="selectedValue" [ngModelOptions]="{standalone:
+                                                true}">
+                                                <mat-option value="">Hand Bag</mat-option>
+                                                <mat-option value="">Luggage Bag</mat-option>
+                                                <mat-option value="">College Bag</mat-option>
+                                                <mat-option value="">Trolly Bag</mat-option>
+                                                <mat-option value="Others">Others</mat-option>
+                                            </mat-select>
+                                        </mat-form-field> 
+                                     
+                                       
+                                        <mat-form-field class="example-full-width">
+                                            <textarea matInput placeholder="Description"></textarea>
+                                        </mat-form-field>                  
+                                    </div>
+                                </mat-grid-tile>
+                                <mat-grid-tile>
+                                    <div class="controles-container">
+                                        <mat-form-field class="example-full-width">
+                                            <input matInput placeholder="BagColor*">
+                                        </mat-form-field>
+                                    </div>
+                                </mat-grid-tile>
+                            
+                            </mat-grid-list>
+
+                            <div class="pull-right buttonspostadd nopadding">
+                                <button mat-raised-button color="primary"><i class="material-icons">save</i>Save</button>
+                                <button mat-raised-button color="warn"><i class="material-icons">settings_backup_restore</i>Reset</button>
+                                <a mat-raised-button routerLink="/home"><i class="material-icons">undo</i>Back To Home</a>
+                            </div>
+                        </form>                      
+                    </div>
+                </mat-tab>
+
+                <mat-tab> 
+                    <ng-template mat-tab-label><i class="material-icons">settings_input_composite</i>Accessoriers</ng-template>
+                    <div class="form-area">
+                        <div>
+                            <mat-toolbar>
+                                <span class="fill-remaining-space"></span>
+                                <span>Post Free Add - Accessoriers</span>
+                                <span class="fill-remaining-space"></span>
+                            </mat-toolbar>
+                        </div>
+                        <form>
+                            <mat-grid-list cols="2" rowHeight="220px">
+                                <mat-grid-tile>
+                                    <button mat-stroked-button color="warn" (click)="onClick()"><mat-icon>file_upload</mat-icon>{{text}}</button>
+                                    <br/>
+                                    <input type="file" id="fileUpload" name="fileUpload" multiple="multiple" accept="{{accept}}" style="display:none;"/>
+                                </mat-grid-tile>
+                                <mat-grid-tile>
+
+                                    <mat-card class="example-card">
+                                        <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
+                                        <mat-card-actions>
+                                            <button mat-button color="warn">Delete</button>
+                                        </mat-card-actions>
+                                    </mat-card>
+
+                                    <mat-card class="example-card">
+                                        <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
+                                        <mat-card-actions>
+                                            <button mat-button color="warn">Delete</button>
+                                        </mat-card-actions>
+                                    </mat-card>
+                                          
+                                </mat-grid-tile>
+                            </mat-grid-list>
+                                
+                            <mat-grid-list cols="1" rowHeight="30px">
+                                <mat-grid-tile>
+                                    <div class="controles-container">
+                                        <div class="add-padding-bottom">
+                                            <mat-radio-group aria-label="Select an option">
+                                                <mat-radio-button value="1">Lost</mat-radio-button>
+                                                <mat-radio-button value="2">Found</mat-radio-button>
+                                               
+                                            </mat-radio-group>
+                                            
+                                        </div>
+                                    </div>
+                                </mat-grid-tile>
+                            </mat-grid-list>
+
+                            <mat-grid-list cols="2" rowHeight="220px">
+                                <mat-grid-tile>
+                                    <div class="controles-container">
+                                     
+                                        <mat-form-field class="example-full-width">
+                                            <input matInput placeholder="Accessoriers Type*">
+                                        </mat-form-field>
+                                        <mat-form-field class="example-full-width">
+                                            <input matInput placeholder="Accessoriers Color*">
+                                        </mat-form-field>
+                                        <mat-form-field class="example-full-width">
+                                            <textarea matInput placeholder="Description"></textarea>
+                                        </mat-form-field>                  
+                                    </div>
+                                </mat-grid-tile>
+
+                            
+                            </mat-grid-list>
+
+                            <div class="pull-right buttonspostadd nopadding">
+                                <button mat-raised-button color="primary"><i class="material-icons">save</i>Save</button>
+                                <button mat-raised-button color="warn"><i class="material-icons">settings_backup_restore</i>Reset</button>
+                                <a mat-raised-button routerLink="/home"><i class="material-icons">undo</i>Back To Home</a>
+                            </div>
+                        </form>                      
+                    </div>
+                </mat-tab>
+
+                <mat-tab> 
+                    <ng-template mat-tab-label><i class="material-icons">pets</i>Pet</ng-template>
+                    <div class="form-area">
+                        <div>
+                            <mat-toolbar>
+                                <span class="fill-remaining-space"></span>
+                                <span>Post Free Add - Pet</span>
+                                <span class="fill-remaining-space"></span>
+                            </mat-toolbar>
+                        </div>
+                        <form>
+                            <mat-grid-list cols="2" rowHeight="220px">
+                                <mat-grid-tile>
+                                    <button mat-stroked-button color="warn" (click)="onClick()"><mat-icon>file_upload</mat-icon>{{text}}</button>
+                                    <br/>
+                                    <input type="file" id="fileUpload" name="fileUpload" multiple="multiple" accept="{{accept}}" style="display:none;"/>
+                                </mat-grid-tile>
+                                <mat-grid-tile>
+
+                                    <mat-card class="example-card">
+                                        <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
+                                        <mat-card-actions>
+                                            <button mat-button color="warn">Delete</button>
+                                        </mat-card-actions>
+                                    </mat-card>
+
+                                    <mat-card class="example-card">
+                                        <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
+                                        <mat-card-actions>
+                                            <button mat-button color="warn">Delete</button>
+                                        </mat-card-actions>
+                                    </mat-card>
+                                          
+                                </mat-grid-tile>
+                            </mat-grid-list>
+                                
+                            <mat-grid-list cols="1" rowHeight="30px">
+                                <mat-grid-tile>
+                                    <div class="controles-container">
+                                        <div class="add-padding-bottom">
+                                            <mat-radio-group aria-label="Select an option">
+                                                <mat-radio-button value="1">Lost</mat-radio-button>
+                                                <mat-radio-button value="2">Found</mat-radio-button>
+                                               
+                                            </mat-radio-group>
+                                            
+                                        </div>
+                                    </div>
+                                </mat-grid-tile>
+                            </mat-grid-list>
+
+                            <mat-grid-list cols="2" rowHeight="220px">
+                                <mat-grid-tile>
+                                    <div class="controles-container">
+                                        <mat-form-field>
+                                            <mat-label>Select pet Type</mat-label>
+                                            <mat-select  [(ngModel)]="selectedValue" [ngModelOptions]="{standalone:
+                                                true}">
+                                                <mat-option value="">Dog</mat-option>
+                                                <mat-option value="">Cat</mat-option>
+                                                <mat-option value="">Bird</mat-option>
+                                                <mat-option value="Others">Others</mat-option>
+                                            </mat-select>
+                                        </mat-form-field> 
+                                     
+                                        <mat-form-field class="example-full-width">
+                                            <input matInput placeholder="Color*">
+                                        </mat-form-field>
+                                        <mat-form-field class="example-full-width">
+                                            <textarea matInput placeholder="Description"></textarea>
+                                        </mat-form-field>                  
+                                    </div>
+                                </mat-grid-tile>
+
+                            
+                            </mat-grid-list>
+
+                            <div class="pull-right buttonspostadd nopadding">
+                                <button mat-raised-button color="primary"><i class="material-icons">save</i>Save</button>
+                                <button mat-raised-button color="warn"><i class="material-icons">settings_backup_restore</i>Reset</button>
+                                <a mat-raised-button routerLink="/home"><i class="material-icons">undo</i>Back To Home</a>
+                            </div>
+                        </form>                      
+                    </div>
+                </mat-tab>
+
+                <mat-tab> 
+                    <ng-template mat-tab-label><i class="material-icons">person</i>Person</ng-template>
+                    <div class="form-area">
+                        <div>
+                            <mat-toolbar>
+                                <span class="fill-remaining-space"></span>
+                                <span>Post Free Add - Person</span>
+                                <span class="fill-remaining-space"></span>
+                            </mat-toolbar>
+                        </div>
+                        <form>
+                            <mat-grid-list cols="2" rowHeight="220px">
+                                <mat-grid-tile>
+                                    <button mat-stroked-button color="warn" (click)="onClick()"><mat-icon>file_upload</mat-icon>{{text}}</button>
+                                    <br/>
+                                    <input type="file" id="fileUpload" name="fileUpload" multiple="multiple" accept="{{accept}}" style="display:none;"/>
+                                </mat-grid-tile>
+                                <mat-grid-tile>
+
+                                    <mat-card class="example-card">
+                                        <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
+                                        <mat-card-actions>
+                                            <button mat-button color="warn">Delete</button>
+                                        </mat-card-actions>
+                                    </mat-card>
+
+                                    <mat-card class="example-card">
+                                        <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
+                                        <mat-card-actions>
+                                            <button mat-button color="warn">Delete</button>
+                                        </mat-card-actions>
+                                    </mat-card>
+                                          
+                                </mat-grid-tile>
+                            </mat-grid-list>
+                                
+                            <mat-grid-list cols="1" rowHeight="30px">
+                                <mat-grid-tile>
+                                    <div class="controles-container">
+                                        <div class="add-padding-bottom">
+                                            <mat-radio-group aria-label="Select an option">
+                                                <mat-radio-button value="1">Lost</mat-radio-button>
+                                                <mat-radio-button value="2">Found</mat-radio-button>
+                                                <mat-radio-button value="1">Male</mat-radio-button>
+                                                <mat-radio-button value="2">Female</mat-radio-button>
+                                            </mat-radio-group>
+                                            
+                                        </div>
+                                    </div>
+                                </mat-grid-tile>
+                            </mat-grid-list>
+
+                            <mat-grid-list cols="2" rowHeight="220px">
+                                <mat-grid-tile>
+                                    <div class="controles-container">
+                                   
+                                        <mat-form-field class="example-full-width">
+                                            <input matInput placeholder="Name On the Certificate*">
+                                        </mat-form-field>
+                                        <mat-form-field class="example-full-width">
+                                            <input matInput placeholder="Age*">
+                                        </mat-form-field>
+                                        <mat-form-field class="example-full-width">
+                                            <textarea matInput placeholder="Description"></textarea>
+                                        </mat-form-field>                  
+                                    </div>
+                                </mat-grid-tile>
+
+                            
+                            </mat-grid-list>
+
+                            <div class="pull-right buttonspostadd nopadding">
+                                <button mat-raised-button color="primary"><i class="material-icons">save</i>Save</button>
+                                <button mat-raised-button color="warn"><i class="material-icons">settings_backup_restore</i>Reset</button>
+                                <a mat-raised-button routerLink="/home"><i class="material-icons">undo</i>Back To Home</a>
+                            </div>
+                        </form>                      
+                    </div>
+                </mat-tab>
+
+            </mat-tab-group>
+        </div>           
+    </div>
+</div>
