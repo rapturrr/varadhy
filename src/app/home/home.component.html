@@ -37,8 +37,9 @@
                             <button type="submit" class="btn btn-primary" style="background-color: #10537e; width:100px;font-weight: bold;">Apply</button>
                           </form>
                     </div>
-
-                    <ad-component></ad-component>
+                    <div *ngFor="let post of postList">
+                        <ad-component [postObj]='post'></ad-component>
+                    </div>
                     
                     <!-- <div class="product-list">
                         <div class="row">

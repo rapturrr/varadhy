@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AdComponentService } from './ad-component/ad-component.service';
 
 @Component({
   selector: 'app-home',
@@ -6,10 +7,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
-
-  constructor() { }
+  postList;
+  constructor(private adService: AdComponentService) { }
 
   ngOnInit() {
+    this.adService.getPosts().subscribe((res) => {
+      
+      this.postList = res['allPosts'];
+      console.log('all response', res['allPosts']);
+    });
   }
 
 }
