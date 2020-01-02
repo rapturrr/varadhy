@@ -14,7 +14,8 @@ export class AdComponentService {
   }
 
   getPosts() {
-    return this.httpClient.get(this._baseURL + '/users/myPosts');
+    // return this.httpClient.get(this._baseURL + 'posts/allPosts?user_id=9533394727');
+    return this.httpClient.get('assets/allposts.json');
   }
 
 }
