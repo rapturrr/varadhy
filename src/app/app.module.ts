@@ -27,6 +27,7 @@ import { PostaddsComponent } from './postadds/postadds.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { TearmsAndConditionComponent } from './tearms-and-condition/tearms-and-condition.component';
 import { AdComponentComponent } from './home/ad-component/ad-component.component';
+import { AddDetailsComponent } from './add-details/add-details.component';
 
 
 @NgModule({
@@ -51,6 +52,7 @@ import { AdComponentComponent } from './home/ad-component/ad-component.component
     PostaddsComponent,
     TearmsAndConditionComponent,
     AdComponentComponent,
+    AddDetailsComponent,
   ],
   imports: [
     BrowserModule,
@@ -109,6 +111,10 @@ import { AdComponentComponent } from './home/ad-component/ad-component.component
     { 
       path:'tearms-and-conditoon',
       component: TearmsAndConditionComponent
+    },
+    { 
+      path:'add-details',
+      component: AddDetailsComponent
     },
     { 
       path:'home',
