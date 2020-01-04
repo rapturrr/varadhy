@@ -1,5 +1,4 @@
-<div class="product-list">
-                        
+<!--<div class="product-list">
     <div class="row">
         <div class="col-md-3 nopadding">
             <div class="product-image">
@@ -15,12 +14,12 @@
             <div class="product-details">
                 <div class="product-details-header">
                     <div class="row">
-                        <h4>Product Type : <span>Laptop</span></h4>
-                        <h3>Product Code : <span>MOB001</span></h3>
-                        <p>Lost</p>
+                        <h4>Product Type : <span>{{postObj.category}}</span></h4>
+                        <h3>Product Code : <span>{{postObj.category}}</span></h3>
+                        <p>{{postObj.post_status}}</p>
                     </div>
                 </div>
-            <hr>
+                <hr>
                 <div class="product-details-body">
                     <table>
                         <tr>
@@ -29,58 +28,98 @@
                             <td><strong>Model Number</strong></td><td>:</td><td><small>DELL123</small></td>
                         </tr>
                         <tr>
-                            <td><strong>Location</strong></td><td>:</td><td><small>Hyderabad</small></td>
+                            <td><strong>Location</strong></td><td>:</td><td><small>{{postObj.city}}</small></td>
                            
-                            <td><strong>Aging</strong></td><td>:</td><td><small>1 week ago</small></td>
+                            <td><strong>Post Time</strong></td><td>:</td><td><small>{{postObj.post_time}}</small></td>
                         </tr>
                     </table>
                     <div class="product-details-description">
                         <h6>Description</h6>
                         <p>lost my laptop one week Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur, itaque illo qui impedit perferendis eiusDoloremque sunt cupiditate incidunt mollitia .</p>
                     </div>
-                
                 </div>
                 <div class="product-details-footer">
                     <div class="row">
-                        <!-- Button trigger modal -->
-                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalScrollable">
-                                Gudlines
-                            </button>
-                         
-                            <!-- Modal -->
+                        <!-- Button trigger modal 
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalScrollable">Gudlines</button>
+                         <!-- Modal 
                             <div class="modal fade" id="exampleModalScrollable" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
                                 <div class="modal-dialog modal-dialog-scrollable" role="document">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                    <h5 class="modal-title" id="exampleModalScrollableTitle">User Gudlines:</h5>
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                        <span aria-hidden="true">&times;</span>
-                                    </button>
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalScrollableTitle">User Gudlines:</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <ul>
+                                                <li>Be wary of fake posts or close posts</li>
+                                                <li>If you lost/found any valuable things contact nearby police station also.</li>
+                                                <li>Check and veify the person's id before returning the found item or take a selfie with that person for future reference.</li>
+                                            </ul>
+                                        </div>
+                                        <div class="modal-footer"><button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button></div>
                                     </div>
-                                    <div class="modal-body">
-                                        <ul>
-                                            <li>Be wary of fake posts or close posts</li>
-                                            <li>If you lost/found any valuable things contact nearby police station also.</li>
-                                            <li>    Check and veify the person's id before returning the found item or take a selfie with that person for future reference.</li>
-                                        </ul>
-                                        
-                                        
-                                    
-                                    </div>
-                                    <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                    
-                                    </div>
-                                </div>
                                 </div>
                             </div>
-                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalScrollable">
-                                    Call
-                            </button>
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalScrollable">Call</button>
                     </div>
-                   
                 </div>
             </div>
         </div>
+    </div>
+</div>-->
+
+
+
+
+
+
+
+
+
+
+
+<div class="productList">
+    <div class="addsProfile">
+        <a href="#">
+           <div class="addProfileHeader">
+                <div class="row">
+                    <div class="col-md-1">
+                        <div class="profileImage">
+                            <img src="./assets/images/img1.jpg"> 
+                        </div>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="profileName">
+                            <h5>Sravan.k</h5>
+                            <p>3 months ago | Hyderabad</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="profileFollow">
+                            <button>follow</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="addProfileBody">
+                            <img src="./assets/images/loptop.jpg">
+                            <span>lost</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="addProfileFooter">
+                            <p>Mobile</p>
+                        </div>
+                       
+                    </div>
+                </div>
+           </div>     
+        </a>
     </div>
 </div>
