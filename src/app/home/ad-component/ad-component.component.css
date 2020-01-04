@@ -1,193 +1,4 @@
-/*home-main
-{
-    width: 100%;
-    height: auto;
-    overflow: hidden;
-    background-color: #eee;
-}
-.main-content
-{
-    width: 100%;
-    height: auto;
-    background-color: #fff;
-    
-}
-.home-body
-{
-    width: 100%;
-    height: auto;
-}
-.category{
-    background-color: #ddd;
-    width:100%;
-    height: auto;
-    margin-top: 1.5%;
-    padding: 4px;
-    margin-bottom: 2%;
-}
-.form-control 
-{
-    display: block;
-    width: 490px;
-    height: 40px;
-    padding: .350rem .75rem;
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 1.5;
-    color: #495057;
-    background-color: #fff;
-    background-clip: padding-box;
-    border: 1px solid #ced4da;
-    border-radius: .25rem;
-    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
-    margin-right: 10px;
-}
-.product-list
-{
-    width: 100%;
-    height: auto;
-    overflow: hidden;
-    box-shadow: 0 0 10px rgba(0,0,0,0.6);
-    margin: 20px 0;
-    border-radius: 5px;
-    background-color:#fff;
-}
-.product-list .product-image 
-{
-    width: 100%;
-    height: 270px;
-     position: relative;
-    transition:  all 1s ease;
-    overflow: hidden;
 
-}
-.product-list .product-image .product-image-box
-{
-    width: 100%;
-    height: 270px;
-}
-.product-list .product-image .product-image-box img
-{
-    width: 100%;
-    height: 100%;
-}
-.product-list .product-image .product-image-view
-{
-    position: absolute;
-    top:-100%;
-    left:0;
-    width: 100%;
-    height: 270px;
-    background-color: rgba(0,0,0,0.6);
-    color: #fff;
-    text-align: center;
-    transition:  all 1s ease;
-}
-.product-list .product-image:hover .product-image-view
-{
-    top:0;
-    
-}
-.product-list .product-image .product-image-view a i
-{
-    padding-top: 40%;
-    text-decoration: none;
-  
-    transition:  all 1s ease;
-}
-.product-list .product-image:hover .product-image-view a i
-{
-    font-size: 25px;
-}
-.product-list .product-details{
-    width: 100%;
-    height: auto;
-    margin-top: 20px;
-  
-}
-hr {
-    margin-top: 0;
-    margin-bottom: 0;
-    border: 0;
-    border-top: 2px solid rgba(0,0,0,.1);
-}
-.product-list .product-details .product-details-header h4
-{
-    margin: 0;
-    padding: 2px;
-    font-size: 14px;
-    margin-left: 5%;
-}
-.product-list .product-details .product-details-header h3
-{
-    margin: 0;
-    padding: 2px;
-    font-size: 14px;
-    margin-left: 15%;
-}
-.product-list .product-details .product-details-header p
-{
-    margin: 0;
-    padding: 4px 25px;
-    font-size: 13px;
-    margin-left: 88%;
-    margin-top: -20px;
-    background-color: red;
-    color:#fff;
-    font-weight: bold;
-    text-transform: uppercase;
-}
-.product-list .product-details .product-details-body table
-{
-    margin-left: 3%;
-    margin-top: 1.5%;
-    margin-bottom: 2%;
-}
-.product-list .product-details .product-details-body table tr
-{
-    padding: 2px;
-}
-.product-list .product-details .product-details-body table tr td
-{
-    padding-top: 2px;
-    padding-right: 10px;
-}
-.product-list .product-details .product-details-body .product-details-description 
-{
-    margin-left: 3%;
-    width: 100%;
-}
-.product-list .product-details .product-details-body .product-details-description h6
-{
-    font-weight: bold;
-  
-}
-.product-list .product-details .product-details-body .product-details-description p
-{
-    text-align: justify;
-    padding: 3px;
-    width: 90%;
-    height: 80px;
-    border: 1px solid #ddd;
-    overflow: auto;
-    border-radius: 5px;
-}
-.product-list .product-details .product-details-footer
-{
-    margin-left: 6%;
-}
-.product-list .product-details .product-details-footer p
-{
-
-  
-}
-
-@media screen and (max-width: 480px) {
-    .form-group{
-        width: 200px;
-        height: 40px;
-    }
-  }*/
 
 .productList
 {
@@ -196,7 +7,7 @@ hr {
 }
 .productList .addsProfile
 {
-    width: 100%;
+    width: 75%;
     height: auto;
     background-color: #fff;
     border-radius: 10px;
@@ -211,12 +22,12 @@ hr {
 }
 .addProfileHeader .profileImage
 {
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
     overflow: hidden;
     border-radius: 50%;
     margin-left: 25%;
-    margin-top: 20%;
+    margin-top: 25%;
 }
 .addProfileHeader .profileImage img
 {
@@ -246,7 +57,7 @@ hr {
 .addProfileBody
 {
     width: 100%;
-    height: 250px;
+    height: 270px;
     overflow: hidden;
    
     position: relative;
