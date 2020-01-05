@@ -18,4 +18,14 @@ export class AdComponentService {
     return this.httpClient.get('assets/allposts.json');
   }
 
+  followUser(userId, followerId) {
+    let user_id = 'UD27384561'; //userId
+    let follower_id = 'UD81960724'; //followerId
+    return this.httpClient.get(this._baseURL + `users/follow?user_id=${9704348659}&follower_id=${9533394727}`)
+  }
+  reportPostComment() {
+    
+  }
+
+
 }
