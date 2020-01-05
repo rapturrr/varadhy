@@ -28,6 +28,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { TearmsAndConditionComponent } from './tearms-and-condition/tearms-and-condition.component';
 import { AdComponentComponent } from './home/ad-component/ad-component.component';
 import { AddDetailsComponent } from './add-details/add-details.component';
+import {SlideshowModule} from 'ng-simple-slideshow';
 
 
 @NgModule({
@@ -61,6 +62,7 @@ import { AddDetailsComponent } from './add-details/add-details.component';
     FormsModule,
     ReactiveFormsModule,
     HttpClientModule,
+    SlideshowModule,
     RouterModule.forRoot([
      
       { 

@@ -44,6 +44,9 @@
                         </form>
                     </div>
                     <div class="main-add">
+                        <slideshow [height]="height" [minHeight]="'525px'" [showDots]='true' [autoPlay]="true" [showArrows]="true" [imageUrls]="imageURLs"
+                            [lazyLoad]="imageURLs?.length > 1" [autoPlayWaitForLazyLoad]="true">
+                        </slideshow>
                          <div *ngFor="let post of postList">
                             <ad-component [postObj]='post'></ad-component>
                         </div>
