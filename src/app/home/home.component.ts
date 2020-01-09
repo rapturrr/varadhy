@@ -8,7 +8,14 @@ import { AdComponentService } from './ad-component/ad-component.service';
 })
 export class HomeComponent implements OnInit {
   postList;
-  constructor(private adService: AdComponentService) { }
+  imageURLs = [];
+  constructor(private adService: AdComponentService) {
+    this.imageURLs = [
+      'http://13.233.86.111/raptur/uploads/posts/images/IMG_20190913_141841_965.jpg',
+      'http://13.233.86.111/raptur/uploads/posts/images/images.jpeg',
+      'http://13.233.86.111/raptur/uploads/posts/images/IMG_20190812_141315.jpg'
+    ]
+   }
 
   ngOnInit() {
     this.adService.getPosts().subscribe((res) => {
