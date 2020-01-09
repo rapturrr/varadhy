@@ -1,7 +1,14 @@
 .youradd-main
 {
-    width: 90%;
+    width: 100%;
     height: 90%;
     overflow: hidden;
     background-color: aquamarine;
+}
+.example-stretched-tabs {
+    width: 100% !important;
+  }
+  .mat-tab-body-content {
+    height: 100VH !important;
+    overflow: auto !important;
 }
